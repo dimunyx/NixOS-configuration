@@ -32,6 +32,7 @@
 			cliphist
 			obsidian
 			pciutils
+			gammastep
 			python315
 			fastfetch
 			unimatrix
