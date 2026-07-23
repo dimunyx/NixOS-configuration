@@ -1,0 +1,66 @@
+{ config, lib, pkgs, inputs, ... }: {
+	environment = {
+		systemPackages = with pkgs; [
+			jq
+			lz4
+			mpv
+			zip
+			tree
+			gimp
+			btop
+			wget
+			cava
+			unzip
+			pipes
+			wtype
+			kitty
+			krita
+			loupe
+			whatsie
+			gnumake
+			spotify
+			udiskie
+			blender
+			cpufetch
+			usbutils
+			nautilus
+			nwg-look
+			opencode
+			inkscape
+			adw-gtk3
+			cliphist
+			obsidian
+			pciutils
+			python315
+			fastfetch
+			unimatrix
+			libnotify
+			playerctl
+			alsa-utils
+			lm_sensors
+			quickshell
+			pixelorama
+			theclicker
+			pavucontrol
+			wl-clipboard
+			brightnessctl
+			xdg-user-dirs
+			bibata-cursors
+			gnome-calculator
+			libsForQt5.qt5ct
+			mpvScripts.mpris
+			telegram-desktop
+			kdePackages.qt6ct
+			kdePackages.kamoso
+			xwayland-satellite
+			gpu-screen-recorder
+			kdePackages.kdenlive
+			(
+				discord.override {
+					withVencord = true;
+				}
+			)
+			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+		];
+	};
+}
