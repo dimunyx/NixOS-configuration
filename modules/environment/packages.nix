@@ -53,6 +53,7 @@
 			kdePackages.qt6ct
 			kdePackages.kamoso
 			xwayland-satellite
+			gnome-disk-utility
 			gpu-screen-recorder
 			kdePackages.kdenlive
 			(
