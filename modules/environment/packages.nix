@@ -21,6 +21,7 @@
 			spotify
 			udiskie
 			blender
+			blueman
 			cpufetch
 			usbutils
 			nautilus
@@ -58,8 +59,8 @@
 			kdePackages.kdenlive
 			(
 				discord.override {
-					withVencord = true;
-				}
+      					withVencord = true;
+    				}
 			)
 			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 		];
