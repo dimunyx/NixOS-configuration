@@ -11,11 +11,5 @@
 		username = "dimunyx";
 		stateVersion = "26.05";
 		homeDirectory = "/home/dimunyx";
-		file = {
-    			".config/wallpapers" = {
-      				source = "${inputs.wall-archive}/wallpapers";
-      				recursive = true;
-    			};
-  		};
 	};
 }

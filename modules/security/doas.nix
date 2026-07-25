@@ -4,17 +4,23 @@
 			enable = true;
 			extraRules = [
 				{
-					users = [ "dimunyx" ];
+					users = [
+						"dimunyx"
+					];
 					keepEnv = true;
 					persist = true;
 				}
 				{
-					users = [ "dimunyx" ];
+					users = [
+						"dimunyx"
+					];
 					cmd = "tee";
 					noPass = true;
 				}
 				{
-					users = [ "dimunyx" ];
+					users = [
+						"dimunyx"
+					];
 					cmd = "sh";
 					noPass = true;
 				}

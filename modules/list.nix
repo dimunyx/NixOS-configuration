@@ -15,5 +15,6 @@
 		./hardware/list.nix
 		./networking/list.nix
 		./environment/list.nix
+		./virtualisation/list.nix
 	];
 }

@@ -7,6 +7,7 @@
 				isNormalUser = true;
 				extraGroups = [
 					"wheel"
+					"libvirtd"
 					"networkmanager"
 				];
 				hashedPasswordFile = toString ./dimunyx-password;

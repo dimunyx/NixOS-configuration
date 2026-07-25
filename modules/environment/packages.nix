@@ -17,11 +17,11 @@
 			krita
 			loupe
 			whatsie
-			gnumake
 			spotify
 			udiskie
 			blender
 			blueman
+			mdwatch
 			cpufetch
 			usbutils
 			nautilus
@@ -44,6 +44,7 @@
 			pixelorama
 			theclicker
 			pavucontrol
+			gnome-boxes
 			wl-clipboard
 			brightnessctl
 			xdg-user-dirs
@@ -63,7 +64,8 @@
       					withVencord = true;
     				}
 			)
-			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+			inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
+      			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 		];
 	};
 }
