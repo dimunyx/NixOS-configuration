@@ -30,14 +30,6 @@
 		nix-cachyos-kernel = {
 			url = "github:xddxdd/nix-cachyos-kernel/release";
 		};
-		quickshell = {
-			url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-			inputs = {
-				nixpkgs = {
-					follows = "nixpkgs";
-				};
-			};
-		};
 		dimunyx-qs = {
 			url = "github:dimunyx-shell/dimunyx-qs";
 		};

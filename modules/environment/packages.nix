@@ -40,7 +40,6 @@
 			playerctl
 			alsa-utils
 			lm_sensors
-			quickshell
 			pixelorama
 			theclicker
 			pavucontrol
@@ -64,7 +63,6 @@
       					withVencord = true;
     				}
 			)
-			inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
       			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 		];
 	};
