@@ -38,11 +38,11 @@
         "wall-archive": "wall-archive"
       },
       "locked": {
-        "lastModified": 1785021568,
-        "narHash": "sha256-JMH18hZXXF15hw06PjQQG+cV/DlmXSh2CJPw0bSRFqQ=",
+        "lastModified": 1785075667,
+        "narHash": "sha256-JF0M5NfGuVBolHeqlNV+W1Z9ZgFqKaHex1nwcXWCQDc=",
         "owner": "dimunyx-shell",
         "repo": "dimunyx-qs",
-        "rev": "2a203fa79318bffd702877c83c970ee6b1509692",
+        "rev": "00c9e7c524a782ac8023630693212d108665cfea",
         "type": "github"
       },
       "original": {
