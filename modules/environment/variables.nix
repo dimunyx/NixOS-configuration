@@ -1,7 +1,7 @@
 { config, lib, pkgs, inputs, ... }: {
 	environment = {
 		variables = {
-			SHELL = "fish";
+			SHELL = "zsh";
 			EDITOR = "nvim";
 			VISUAL = "nvim";
 			BROWSER = "zen";

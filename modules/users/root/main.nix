@@ -3,7 +3,7 @@
 		users = {
 			root = {
 				enable = true;
-				shell = pkgs.fish;
+				shell = pkgs.zsh;
 				hashedPasswordFile = toString ./root-password;
 			};
 		};

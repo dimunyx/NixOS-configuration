@@ -5,6 +5,7 @@
 			lz4
 			mpv
 			zip
+			nil
 			tree
 			gimp
 			btop
@@ -22,6 +23,8 @@
 			blender
 			blueman
 			mdwatch
+			pyright
+			harper
 			cpufetch
 			usbutils
 			nautilus
@@ -44,6 +47,7 @@
 			theclicker
 			pavucontrol
 			gnome-boxes
+			clang-tools
 			wl-clipboard
 			brightnessctl
 			xdg-user-dirs
@@ -52,12 +56,14 @@
 			libsForQt5.qt5ct
 			mpvScripts.mpris
 			telegram-desktop
+			qt6.qtdeclarative
 			kdePackages.qt6ct
 			kdePackages.kamoso
 			xwayland-satellite
 			gnome-disk-utility
 			gpu-screen-recorder
 			kdePackages.kdenlive
+			bash-language-server
 			(
 				discord.override {
       					withVencord = true;

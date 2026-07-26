@@ -1,0 +1,26 @@
+{ config, lib, pkgs, ... }: {
+	programs = {
+		zsh = {
+			enable = true;
+			histSize = 16000;
+			setOptions = [
+				"autocd"
+			];
+			shellAliases = {
+				dev = "cd ~/GitHub";
+				matrix = "unimatrix --color blue --speed 95";
+				cpufetch = "cpufetch --color 181,143,255:181,143,255:232,216,255:232,216,255:232,216,255:232,216,255";
+				start-video = "gpu-screen-recorder -w portal -o '/home/dimunyx/Видео/Выходные видео/output.mkv' -c mkv -f 60 -k h264 -q very_high -a default_output";
+			};
+			enableLsColors = true;
+			autosuggestions = {
+				enable = true;
+			};
+			enableCompletion = true;
+			syntaxHighlighting = {
+				enable = true;
+			};
+			histFile = "$HOME/.zsh_history";
+		};
+	};
+}

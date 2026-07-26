@@ -1,10 +1,10 @@
 { config, lib, pkgs, inputs, ... }: {
 	imports = [
 		./nh.nix
+		./zsh.nix
 		./git.nix
 		./nano.nix
 		./niri.nix
-		./fish.nix
 		./neovim.nix
 		./starship.nix
 		./xwayland.nix

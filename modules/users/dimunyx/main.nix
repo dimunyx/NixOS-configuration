@@ -3,7 +3,7 @@
 		users = {
 			dimunyx = {
 				enable = true;
-				shell = pkgs.fish;
+				shell = pkgs.zsh;
 				isNormalUser = true;
 				extraGroups = [
 					"wheel"
