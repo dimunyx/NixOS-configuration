@@ -17,6 +17,7 @@
 			kitty
 			krita
 			loupe
+			harper
 			whatsie
 			spotify
 			udiskie
@@ -24,7 +25,6 @@
 			blueman
 			mdwatch
 			pyright
-			harper
 			cpufetch
 			usbutils
 			nautilus
@@ -49,6 +49,7 @@
 			gnome-boxes
 			clang-tools
 			wl-clipboard
+			gnome-clocks
 			brightnessctl
 			xdg-user-dirs
 			bibata-cursors
@@ -64,6 +65,7 @@
 			gpu-screen-recorder
 			kdePackages.kdenlive
 			bash-language-server
+			onlyoffice-desktopeditors
 			(
 				discord.override {
       					withVencord = true;
