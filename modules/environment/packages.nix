@@ -17,7 +17,6 @@
 			kitty
 			krita
 			loupe
-			ffmpeg
 			harper
 			whatsie
 			spotify
