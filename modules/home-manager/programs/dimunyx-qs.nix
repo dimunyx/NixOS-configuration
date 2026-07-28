@@ -5,8 +5,8 @@
 	programs = {
 		dimunyx-qs = {
 			enable = true;
-			password = "1111";
 			locale = "ru_RU";
+			password = "1111";
 			enableWallpapers = true;
 			weather = {
 				enable = true;
