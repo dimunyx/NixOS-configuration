@@ -17,6 +17,7 @@
 			kitty
 			krita
 			loupe
+			ffmpeg
 			harper
 			whatsie
 			spotify
@@ -41,6 +42,7 @@
 			unimatrix
 			libnotify
 			playerctl
+			hyprpicker
 			alsa-utils
 			lm_sensors
 			pixelorama
@@ -50,9 +52,12 @@
 			clang-tools
 			wl-clipboard
 			gnome-clocks
+			qt5.qtwayland
+			qt6.qtwayland
 			brightnessctl
 			xdg-user-dirs
-			bibata-cursors
+			hyprsysteminfo
+			hyprpolkitagent
 			gnome-calculator
 			libsForQt5.qt5ct
 			mpvScripts.mpris
@@ -72,6 +77,9 @@
     				}
 			)
       			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+			inputs.hyprcapture.packages.${pkgs.stdenv.hostPlatform.system}.hyprcapture
+			inputs.scroll-overview.packages.${pkgs.stdenv.hostPlatform.system}.scrolloverview
+			inputs.hypr-dynamic-cursors.packages.${pkgs.stdenv.hostPlatform.system}.hypr-dynamic-cursors
 		];
 	};
 }

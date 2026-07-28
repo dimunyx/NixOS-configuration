@@ -1,8 +1,8 @@
 { config, lib, pkgs, ... }: {
 	programs = {
-		niri = {
+		nautilus-open-any-terminal = {
 			enable = true;
-			useNautilus = true;
+			terminal = "kitty";
 		};
 	};
 }

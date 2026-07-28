@@ -1,6 +1,5 @@
 { config, lib, pkgs, nix-cachyos-kernel, inputs, ... }: {
 	imports = [
-		./xdg/list.nix
 		./nix/list.nix
 		./i18n/list.nix
 		./time/list.nix

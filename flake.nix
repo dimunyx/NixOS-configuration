@@ -24,6 +24,22 @@
 				};
 			};
 		};
+		hyprland = {
+			url = "github:hyprwm/Hyprland/v0.56.1";
+			inputs = {
+				nixpkgs = {
+					follows = "nixpkgs";
+				};
+			};
+		};
+		hyprcapture = {
+			url = "github:gfhdhytghd/HyprCapture";
+			inputs = {
+				hyprland = {
+					follows = "hyprland";
+				};
+			};
+		};
     		nixpkgs = {
 			url = "github:NixOS/nixpkgs/nixos-unstable";
 		};
@@ -32,6 +48,22 @@
 		};
 		dimunyx-qs = {
 			url = "github:dimunyx-shell/dimunyx-qs";
+		};
+		hypr-dynamic-cursors = {
+			url = "github:VirtCode/hypr-dynamic-cursors";
+			inputs = {
+				hyprland = {
+					follows = "hyprland";
+				};
+			};
+		};
+		scroll-overview = {
+			url = "github:yayuuu/hyprland-scroll-overview";
+			inputs = {
+				hyprland = {
+					follows = "hyprland";
+				};
+			};
 		};
   	};
 
@@ -61,17 +93,6 @@
 							nixpkgs = {
 								overlays = [
 									nix-cachyos-kernel.overlays.pinned
-									(
-										final: prev: {
-											niri = prev.niri.overrideAttrs (
-												old: {
-													postFixup = (old.postFixup or "") + ''
-														substituteInPlace $out/bin/niri-session --replace 'systemctl --user import-environment' 'systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP XDG_RUNTIME_DIR DBUS_SESSION_BUS_ADDRESS HOME'
-													'';
-												}
-											);
-										}
-									)
 								];
 							};
 						}
