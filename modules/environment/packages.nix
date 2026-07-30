@@ -55,8 +55,6 @@
 			qt6.qtwayland
 			brightnessctl
 			xdg-user-dirs
-			hyprsysteminfo
-			hyprpolkitagent
 			gnome-calculator
 			libsForQt5.qt5ct
 			mpvScripts.mpris
@@ -64,8 +62,8 @@
 			qt6.qtdeclarative
 			kdePackages.qt6ct
 			kdePackages.kamoso
-			xwayland-satellite
 			gnome-disk-utility
+			xwayland-satellite
 			kdePackages.kdenlive
 			bash-language-server
 			onlyoffice-desktopeditors
@@ -75,9 +73,6 @@
     				}
 			)
       			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-			inputs.hyprcapture.packages.${pkgs.stdenv.hostPlatform.system}.hyprcapture
-			inputs.scroll-overview.packages.${pkgs.stdenv.hostPlatform.system}.scrolloverview
-			inputs.hypr-dynamic-cursors.packages.${pkgs.stdenv.hostPlatform.system}.hypr-dynamic-cursors
 		];
 	};
 }

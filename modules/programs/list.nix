@@ -4,10 +4,10 @@
 		./zsh.nix
 		./git.nix
 		./nano.nix
+		./niri.nix
 		./neovim.nix
 		./starship.nix
 		./xwayland.nix
-		./hyprland.nix
 		./gpu-screen-recorder.nix
 		./nautilus-open-any-terminal.nix
 	];
