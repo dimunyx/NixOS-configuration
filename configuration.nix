@@ -1,6 +1,6 @@
 { config, lib, pkgs, nix-cachyos-kernel, inputs, ... }: {
 	imports = [
-		./modules/list.nix
+		./modules
 		./hardware-configuration.nix
 	];
 }

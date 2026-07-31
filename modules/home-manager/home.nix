@@ -1,6 +1,6 @@
 { pkgs, lib, inputs, ... }: {
 	imports = [
-		./programs/list.nix
+		./programs
 	];
 	programs = {
 		home-manager = {

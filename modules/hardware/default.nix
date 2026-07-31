@@ -1,8 +1,8 @@
-{ config, lib, pkgs, ... }: {
+{
 	imports = [
 		./graphics.nix
 		./bluetooth.nix
+		./configuration
 		./hardware-config.nix
-		./configuration/list.nix
 	];
 }

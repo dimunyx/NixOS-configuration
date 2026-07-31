@@ -30,8 +30,24 @@
 		nix-cachyos-kernel = {
 			url = "github:xddxdd/nix-cachyos-kernel/release";
 		};
-		dimunyx-qs = {
-			url = "github:dimunyx-shell/dimunyx-qs";
+		noctalia = {
+			url = "github:noctalia-dev/noctalia/cachix";
+			inputs = {
+				nixpkgs = {
+					follows = "nixpkgs";
+				};
+			};
+		};
+		noctalia-greeter = {
+			url = "github:noctalia-dev/noctalia-greeter";
+		};
+		wall-archive = {
+			url = "github:vimlinuz/wall-archive";
+			inputs = {
+				nixpkgs = {
+					follows = "nixpkgs";
+				};
+			};
 		};
   	};
 

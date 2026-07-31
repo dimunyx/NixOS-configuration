@@ -55,6 +55,7 @@
 			qt6.qtwayland
 			brightnessctl
 			xdg-user-dirs
+			bibata-cursors
 			gnome-calculator
 			libsForQt5.qt5ct
 			mpvScripts.mpris
@@ -64,6 +65,7 @@
 			kdePackages.kamoso
 			gnome-disk-utility
 			xwayland-satellite
+			papirus-icon-theme
 			kdePackages.kdenlive
 			bash-language-server
 			onlyoffice-desktopeditors

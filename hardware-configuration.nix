@@ -2,7 +2,7 @@
 
 {
 	imports = [
-		./modules/list.nix
+		./modules
 		(
 			modulesPath + "/installer/scan/not-detected.nix"
 		)
