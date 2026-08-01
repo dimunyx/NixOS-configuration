@@ -26,6 +26,7 @@
 			mdwatch
 			pyright
 			cpufetch
+			mpvpaper
 			usbutils
 			nautilus
 			nwg-look
@@ -73,6 +74,17 @@
 				discord.override {
       					withVencord = true;
     				}
+			)
+			(
+				pkgs.buildGoModule {
+					pname = "iris";
+					version = inputs.iris.shortRev or inputs.iris.lastModifiedDate;
+					src = inputs.iris;
+					subPackages = [ "cmd/iris" ];
+					proxyVendor = true;
+					vendorHash = "sha256-KQNloP/Aj283YQ4d5LFu/2Pbb2HbVTZPhLK1fs4xvGw=";
+					doCheck = false;
+				}
 			)
       			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 		];

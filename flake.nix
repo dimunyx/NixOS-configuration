@@ -8,6 +8,9 @@
 				};
 			};
 		};
+		iris = {
+			url = "github:versenilvis/iris/main";
+		};
 		zen-browser = {
 			url = "github:youwen5/zen-browser-flake";
 			inputs = {
