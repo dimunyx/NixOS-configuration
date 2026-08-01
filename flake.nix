@@ -10,6 +10,11 @@
 		};
 		iris = {
 			url = "github:versenilvis/iris/main";
+			inputs = {
+				nixpkgs = {
+					follows = "nixpkgs";
+				};
+			};
 		};
 		zen-browser = {
 			url = "github:youwen5/zen-browser-flake";
@@ -32,6 +37,11 @@
 		};
 		nix-cachyos-kernel = {
 			url = "github:xddxdd/nix-cachyos-kernel/release";
+			inputs = {
+				nixpkgs = {
+					follows = "nixpkgs";
+				};
+			};
 		};
 		noctalia = {
 			url = "github:noctalia-dev/noctalia/cachix";
@@ -43,9 +53,22 @@
 		};
 		noctalia-greeter = {
 			url = "github:noctalia-dev/noctalia-greeter";
+			inputs = {
+				nixpkgs = {
+					follows = "nixpkgs";
+				};
+			};
 		};
 		wall-archive = {
 			url = "github:vimlinuz/wall-archive";
+			inputs = {
+				nixpkgs = {
+					follows = "nixpkgs";
+				};
+			};
+		};
+		opencode = {
+			url = "github:anomalyco/opencode";
 			inputs = {
 				nixpkgs = {
 					follows = "nixpkgs";
@@ -61,7 +84,7 @@
 					inherit inputs;
 				};
       				modules = [
-					./configuration.nix
+					./hosts/configuration.nix
 					home-manager.nixosModules.home-manager
 					{
 						home-manager = {
@@ -71,7 +94,7 @@
 								inherit inputs;
 							};
 							users = {
-								dimunyx = import ./modules/home-manager/home.nix;
+								dimunyx = import ./homes/home.nix;
 							};
 						};
 					}

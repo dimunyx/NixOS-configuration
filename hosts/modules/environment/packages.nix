@@ -7,8 +7,8 @@
 			zip
 			nil
 			tree
-			gimp
 			btop
+			gimp
 			wget
 			cava
 			unzip
@@ -30,7 +30,6 @@
 			usbutils
 			nautilus
 			nwg-look
-			opencode
 			inkscape
 			adw-gtk3
 			cliphist
@@ -86,6 +85,7 @@
 					doCheck = false;
 				}
 			)
+			inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.opencode
       			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 		];
 	};
