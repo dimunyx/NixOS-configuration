@@ -2,6 +2,7 @@
 	environment = {
 		systemPackages = with pkgs; [
 			jq
+			fzf
 			lz4
 			mpv
 			zip
@@ -18,6 +19,7 @@
 			krita
 			loupe
 			harper
+			ddcutil
 			whatsie
 			spotify
 			udiskie
@@ -26,7 +28,6 @@
 			mdwatch
 			pyright
 			cpufetch
-			mpvpaper
 			usbutils
 			nautilus
 			nwg-look
@@ -74,19 +75,21 @@
       					withVencord = true;
     				}
 			)
+			inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.opencode
+      			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 			(
 				pkgs.buildGoModule {
 					pname = "iris";
-					version = inputs.iris.shortRev or inputs.iris.lastModifiedDate;
-					src = inputs.iris;
-					subPackages = [ "cmd/iris" ];
-					proxyVendor = true;
-					vendorHash = "sha256-KQNloP/Aj283YQ4d5LFu/2Pbb2HbVTZPhLK1fs4xvGw=";
 					doCheck = false;
+					src = inputs.iris;
+					subPackages = [
+						"cmd/iris"
+					];
+					proxyVendor = true;
+					version = inputs.iris.shortRev or inputs.iris.lastModifiedDate;
+					vendorHash = "sha256-KQNloP/Aj283YQ4d5LFu/2Pbb2HbVTZPhLK1fs4xvGw=";
 				}
 			)
-			inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.opencode
-      			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 		];
 	};
 }
