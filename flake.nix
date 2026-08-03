@@ -37,11 +37,6 @@
 		};
 		nix-cachyos-kernel = {
 			url = "github:xddxdd/nix-cachyos-kernel/release";
-			inputs = {
-				nixpkgs = {
-					follows = "nixpkgs";
-				};
-			};
 		};
 		noctalia = {
 			url = "github:noctalia-dev/noctalia/cachix";

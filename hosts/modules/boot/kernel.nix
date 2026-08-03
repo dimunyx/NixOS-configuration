@@ -1,4 +1,4 @@
-{ config, lib, pkgs, nix-cachyos-kernel, ... }: {
+{ pkgs, ... }: {
 	boot = {
 		kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-bore-lto;
 	};
