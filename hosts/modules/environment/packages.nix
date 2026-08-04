@@ -47,7 +47,6 @@
 			lm_sensors
 			pixelorama
 			theclicker
-			quickshell
 			pavucontrol
 			gnome-boxes
 			clang-tools
