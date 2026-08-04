@@ -2,7 +2,7 @@
 	programs = {
 		nh = {
 			enable = true;
-			flake = "/etc/nixos";
+			flake = "/home/dimunyx/.config/nixos";
 		};
 	};
 }

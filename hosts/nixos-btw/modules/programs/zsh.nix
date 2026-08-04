@@ -9,7 +9,7 @@
 			shellAliases = {
 				dev = "cd ~/GitHub";
 				matrix = "unimatrix --color blue --speed 96";
-				cpufetch = "cpufetch --color 122,162,247:122,162,247:122,162,247:192,202,245:192,202,245";
+				cpufetch = "cpufetch --color 137,180,250:137,180,250:137,180,250:205,214,244:205,214,244";
 				start-video = "gpu-screen-recorder -w screen -o '/home/dimunyx/Видео/Выходные видео/output.mp4' -c mp4 -f 60 -k h264 -q very_high -a default_output";
 			};
 			enableLsColors = true;

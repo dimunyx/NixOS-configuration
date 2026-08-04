@@ -10,6 +10,7 @@
 		./starship.nix
 		./xwayland.nix
 		./noctalia.nix
+		./obs-studio.nix
 		./noctalia-greeter.nix
 		./gpu-screen-recorder.nix
 		./nautilus-open-any-terminal.nix

@@ -71,7 +71,6 @@
 			};
 		};
   	};
-
   	outputs = inputs@{ self, nixpkgs, nix-cachyos-kernel, home-manager, ... }: {
     		nixosConfigurations = {
 			nixos-btw = nixpkgs.lib.nixosSystem {
@@ -79,7 +78,7 @@
 					inherit inputs;
 				};
       				modules = [
-					./hosts/configuration.nix
+					./hosts/nixos-btw/configuration.nix
 					home-manager.nixosModules.home-manager
 					{
 						home-manager = {
@@ -89,7 +88,7 @@
 								inherit inputs;
 							};
 							users = {
-								dimunyx = import ./homes/home.nix;
+								dimunyx = import ./homes/dimunyx/home.nix;
 							};
 						};
 					}
