@@ -5,8 +5,8 @@
 				enable = true;
 				device = "nodev";
 				efiSupport = true;
-				theme = "/boot/grub/themes/Lilac_AMOLED";
-				splashImage = "/boot/grub/themes/Lilac_AMOLED/background.png";
+				theme = "/boot/grub/themes/Eldritch";
+				splashImage = "/boot/grub/themes/Eldritch/background.png";
 			};
 		};
 	};

@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, ... }: {
+{ pkgs, inputs, ... }: {
 	environment = {
 		systemPackages = with pkgs; [
 			jq
@@ -56,7 +56,6 @@
 			qt6.qtwayland
 			brightnessctl
 			xdg-user-dirs
-			bibata-cursors
 			gnome-calculator
 			libsForQt5.qt5ct
 			mpvScripts.mpris
