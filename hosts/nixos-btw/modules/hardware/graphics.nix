@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+{ pkgs, ... }: {
 	hardware = {
 		graphics = {
 			enable = true;

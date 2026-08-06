@@ -1,8 +1,7 @@
 { ... }: {
 	programs = {
-		nh = {
+		codex = {
 			enable = true;
-			flake = "/home/dimunyx/.config/nixos";
 		};
 	};
 }

@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+{ pkgs, ... }: {
 	programs = {
 		obs-studio = {
 			enable = true;

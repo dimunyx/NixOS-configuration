@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+{ ... }: {
 	programs = {
 		zsh = {
 			enable = true;
@@ -7,7 +7,7 @@
 				"autocd"
 			];
 			shellAliases = {
-				dev = "cd ~/GitHub";
+				dev = "cd ~/dev";
 				matrix = "unimatrix --color green --speed 96";
 				cpufetch = "cpufetch --color 55,244,153:55,244,153:55,244,153:235,250,250:235,250,250";
 				start-video = "gpu-screen-recorder -w screen -o '/home/dimunyx/Видео/Выходные видео/output.mp4' -c mp4 -f 60 -k h264 -q very_high -a default_output";

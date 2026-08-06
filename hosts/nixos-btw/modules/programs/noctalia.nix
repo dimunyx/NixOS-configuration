@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, ... }: {
+{ pkgs, inputs, ... }: {
 	programs = {
 		noctalia = {
 			enable = true;

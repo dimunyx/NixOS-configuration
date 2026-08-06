@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+{ pkgs, ... }: {
 	environment = {
 		shells = with pkgs; [
 			zsh

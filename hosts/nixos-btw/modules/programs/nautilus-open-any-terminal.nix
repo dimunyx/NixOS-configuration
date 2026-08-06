@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+{ ... }: {
 	programs = {
 		nautilus-open-any-terminal = {
 			enable = true;

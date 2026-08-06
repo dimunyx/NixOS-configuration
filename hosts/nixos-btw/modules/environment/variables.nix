@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, ... }: {
+{ ... }: {
 	environment = {
 		variables = {
 			SHELL = "zsh";

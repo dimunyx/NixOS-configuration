@@ -1,4 +1,4 @@
-{ pkgs, lib, inputs, ... }:
+{ inputs, ... }:
 let
   	wallpapers = "${inputs.wall-archive}/wallpapers";
 in

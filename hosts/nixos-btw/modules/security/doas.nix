@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+{ ... }: {
 	security = {
 		doas = {
 			enable = true;

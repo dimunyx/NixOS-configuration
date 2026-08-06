@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+{ pkgs, ... }: {
 	console = {
 		earlySetup = true;
 		font = "cyr-sun16";
