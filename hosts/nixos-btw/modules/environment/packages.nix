@@ -19,6 +19,7 @@
 			kitty
 			krita
 			loupe
+			nodejs
 			harper
 			ddcutil
 			whatsie
@@ -75,8 +76,7 @@
       					withVencord = true;
     				}
 			)
-			inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.opencode
-      			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+      		inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 			(
 				pkgs.buildGoModule {
 					pname = "iris";

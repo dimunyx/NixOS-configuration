@@ -68,14 +68,6 @@
 				};
 			};
 		};
-		opencode = {
-			url = "github:anomalyco/opencode";
-			inputs = {
-				nixpkgs = {
-					follows = "nixpkgs";
-				};
-			};
-		};
   	};
   	outputs = inputs@{ self, nixpkgs, nix-cachyos-kernel, home-manager, ... }: {
     		nixosConfigurations = {
