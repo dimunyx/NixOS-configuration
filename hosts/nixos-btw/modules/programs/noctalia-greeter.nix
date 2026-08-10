@@ -7,11 +7,17 @@
 			enable = true;
 			settings = {
 				cursor = {
-					theme = "Bibata-Modern-Classic";
+					theme = "Bibata-Modern-Catppuccin-Mocha-Blue";
 					size = 40;
-					path = "${pkgs.bibata-cursors}/share/icons";
+					path = "${inputs."Bibata-Modern-Catppuccin-Mocha-Blue".packages.${pkgs.stdenv.hostPlatform.system}.default}/share/icons";
 				};
-				pallete = "Lilac AMOLED";
+				appearance = {
+					scheme = "Synced";
+					password_style = "random";
+				};
+				keyboard = {
+					layout = "us";
+				};
 			};
 		};
 	};

@@ -12,6 +12,7 @@
 			gimp
 			wget
 			cava
+			codex
 			unzip
 			pipes
 			wtype
@@ -38,10 +39,10 @@
 			pciutils
 			gammastep
 			python315
-			fastfetch
 			unimatrix
 			libnotify
 			playerctl
+			fastfetch
 			hyprpicker
 			alsa-utils
 			lm_sensors
@@ -86,9 +87,10 @@
 					];
 					proxyVendor = true;
 					version = inputs.iris.shortRev or inputs.iris.lastModifiedDate;
-					vendorHash = "sha256-KQNloP/Aj283YQ4d5LFu/2Pbb2HbVTZPhLK1fs4xvGw=";
+					vendorHash = "sha256-q1szUQkhdKq2VhMuWYYWTahmDxGeVjvHLmjciZu3cBU=";
 				}
 			)
+			inputs.Bibata-Modern-Catppuccin-Mocha-Blue.packages.${pkgs.stdenv.hostPlatform.system}.default
 		];
 	};
 }

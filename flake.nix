@@ -1,5 +1,11 @@
 {
   	inputs = {
+		Bibata-Modern-Catppuccin-Mocha-Blue = {
+			url = "github:dimunyx/Bibata-Modern-Catppuccin-Mocha-Blue";
+		};
+		millennium = {
+      			url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    		};
 		spicetify-nix = {
 			url = "github:Gerg-L/spicetify-nix";
 			inputs = {
@@ -96,6 +102,7 @@
 						{ pkgs, ... }: {
 							nixpkgs = {
 								overlays = [
+									inputs.millennium.overlays.default
 									nix-cachyos-kernel.overlays.pinned
 								];
 							};

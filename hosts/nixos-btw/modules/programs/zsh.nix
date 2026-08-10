@@ -10,7 +10,7 @@
 				dev = "cd ~/dev";
 				matrix = "unimatrix --color blue --speed 96";
 				cpufetch = "cpufetch --color 137,180,250:137,180,250:137,180,250:205,214,244:205,214,244";
-				start-video = "gpu-screen-recorder -w screen -o '/home/dimunyx/Видео/Выходные видео/output.mp4' -c mp4 -f 60 -k h264 -q very_high -a default_output";
+				start-video = "gpu-screen-recorder -w screen -o '/home/dimunyx/Видео/Выходные видео/output.mp4' -c mp4 -f 60 -k h264 -q ultra -a default_output";
 			};
 			enableLsColors = true;
 			enableCompletion = true;

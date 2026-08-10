@@ -5,8 +5,8 @@
 				enable = true;
 				device = "nodev";
 				efiSupport = true;
-				theme = "/boot/grub/themes/Eldritch";
-				splashImage = "/boot/grub/themes/Eldritch/background.png";
+				theme = "/boot/grub/themes/Catpuccin Mocha Blue";
+				splashImage = "/boot/grub/themes/Catpuccin Mocha Blue/background.png";
 			};
 		};
 	};

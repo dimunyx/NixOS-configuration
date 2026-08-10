@@ -6,6 +6,7 @@
 		./yazi.nix
 		./nano.nix
 		./niri.nix
+		./steam.nix
 		./neovim.nix
 		./starship.nix
 		./xwayland.nix
