@@ -14,6 +14,14 @@
 				};
 			};
 		};
+		pyroclear = {
+			url = "github:shreyanth-sureshkrishnaa/pyroclear";
+			inputs = {
+				nixpkgs = {
+					follows = "nixpkgs";
+				};
+			};
+		};
 		iris = {
 			url = "github:versenilvis/iris/main";
 			inputs = {

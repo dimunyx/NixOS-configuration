@@ -2,9 +2,9 @@
 	environment = {
 		variables = {
 			SHELL = "zsh";
+			BROWSER = "zen";
 			EDITOR = lib.mkForce "code";
 			VISUAL = lib.mkForce "code";
-			BROWSER = "zen";
 			NIXOS_OZONE_WL = "1";
 			CURSOR_THEME = "Bibata-Modern-Catppuccin-Mocha-Blue";
 			CURSOR_SIZE = "40";

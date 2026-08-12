@@ -8,6 +8,8 @@
 			];
 			shellAliases = {
 				dev = "cd ~/dev";
+				clear = "pyroclear";
+				nixos-dir = "cd $HOME/.config/nixos";
 				matrix = "unimatrix --color blue --speed 96";
 				nixos-add = "cd $HOME/.config/nixos && git add .";
 				cpufetch = "cpufetch --color 137,180,250:137,180,250:137,180,250:205,214,244:205,214,244";

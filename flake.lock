@@ -307,6 +307,26 @@
         "type": "github"
       }
     },
+    "pyroclear": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1786527586,
+        "narHash": "sha256-yp1cI+nuaIhtdOLMV8Nf4/a2lXOajbjMWJF47htS+aM=",
+        "owner": "shreyanth-sureshkrishnaa",
+        "repo": "pyroclear",
+        "rev": "38a59a64531a5c6de8f5aca99a8a80b4544d9f59",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shreyanth-sureshkrishnaa",
+        "repo": "pyroclear",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "Bibata-Modern-Catppuccin-Mocha-Blue": "Bibata-Modern-Catppuccin-Mocha-Blue",
@@ -317,6 +337,7 @@
         "nixpkgs": "nixpkgs_4",
         "noctalia": "noctalia",
         "noctalia-greeter": "noctalia-greeter",
+        "pyroclear": "pyroclear",
         "spicetify-nix": "spicetify-nix",
         "wall-archive": "wall-archive",
         "zen-browser": "zen-browser"
