@@ -38,7 +38,7 @@
 				};
 			};
 		};
-    		nixpkgs = {
+    	nixpkgs = {
 			url = "github:NixOS/nixpkgs/nixos-unstable";
 		};
 		nix-cachyos-kernel = {
@@ -70,7 +70,7 @@
 		};
   	};
   	outputs = inputs@{ self, nixpkgs, nix-cachyos-kernel, home-manager, ... }: {
-    		nixosConfigurations = {
+    	nixosConfigurations = {
 			nixos-btw = nixpkgs.lib.nixosSystem {
 				specialArgs = {
 					inherit inputs;

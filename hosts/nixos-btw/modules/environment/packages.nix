@@ -21,6 +21,7 @@
 			loupe
 			nodejs
 			harper
+			anydesk
 			ddcutil
 			whatsie
 			spotify
