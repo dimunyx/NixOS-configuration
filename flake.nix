@@ -50,7 +50,7 @@
 			url = "github:NixOS/nixpkgs/nixos-unstable";
 		};
 		nix-cachyos-kernel = {
-			url = "github:xddxdd/nix-cachyos-kernel/release";
+			url = "github:xddxdd/nix-cachyos-kernel";
 		};
 		noctalia = {
 			url = "github:noctalia-dev/noctalia/cachix";
@@ -103,7 +103,7 @@
 							nixpkgs = {
 								overlays = [
 									inputs.millennium.overlays.default
-									nix-cachyos-kernel.overlays.pinned
+									nix-cachyos-kernel.overlays.default
 								];
 							};
 						}
