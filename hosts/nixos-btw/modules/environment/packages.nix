@@ -72,11 +72,6 @@
 			kdePackages.kdenlive
 			bash-language-server
 			onlyoffice-desktopeditors
-			(
-				discord.override {
-      					withVencord = true;
-    				}
-			)
 			inputs.pyroclear.packages.${pkgs.stdenv.hostPlatform.system}.default
       		inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 			(
