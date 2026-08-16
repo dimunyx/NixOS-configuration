@@ -1,5 +1,8 @@
 {
   	inputs = {
+		nixcord = {
+			url = "github:4evy/nixcord";
+		};
 		Bibata-Modern-Catppuccin-Mocha-Blue = {
 			url = "github:dimunyx/Bibata-Modern-Catppuccin-Mocha-Blue";
 		};
