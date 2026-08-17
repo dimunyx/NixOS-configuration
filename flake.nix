@@ -25,14 +25,6 @@
 				};
 			};
 		};
-		iris = {
-			url = "github:versenilvis/iris/main";
-			inputs = {
-				nixpkgs = {
-					follows = "nixpkgs";
-				};
-			};
-		};
 		zen-browser = {
 			url = "github:youwen5/zen-browser-flake";
 			inputs = {

@@ -68,24 +68,13 @@
 			gnome-disk-utility
 			xwayland-satellite
 			papirus-icon-theme
+			zsh-autosuggestions
 			kdePackages.kdenlive
 			bash-language-server
 			onlyoffice-desktopeditors
+			zsh-history-substring-search
 			inputs.pyroclear.packages.${pkgs.stdenv.hostPlatform.system}.default
       		inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-			(
-				pkgs.buildGoModule {
-					pname = "iris";
-					doCheck = false;
-					src = inputs.iris;
-					subPackages = [
-						"cmd/iris"
-					];
-					proxyVendor = true;
-					version = inputs.iris.shortRev or inputs.iris.lastModifiedDate;
-					vendorHash = "sha256-q1szUQkhdKq2VhMuWYYWTahmDxGeVjvHLmjciZu3cBU=";
-				}
-			)
 			inputs.Bibata-Modern-Catppuccin-Mocha-Blue.packages.${pkgs.stdenv.hostPlatform.system}.default
 		];
 	};
