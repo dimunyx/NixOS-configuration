@@ -2,7 +2,6 @@
 	environment = {
 		systemPackages = with pkgs; [
 			jq
-			fzf
 			lz4
 			mpv
 			zip
@@ -20,7 +19,6 @@
 			loupe
 			nodejs
 			harper
-			anydesk
 			ddcutil
 			whatsie
 			spotify
@@ -45,13 +43,12 @@
 			playerctl
 			fastfetch
 			hyprpicker
-			alsa-utils
-			lm_sensors
 			pixelorama
 			theclicker
 			pavucontrol
 			gnome-boxes
 			clang-tools
+			libreoffice
 			wl-clipboard
 			gnome-clocks
 			qt5.qtwayland
@@ -71,7 +68,6 @@
 			zsh-autosuggestions
 			kdePackages.kdenlive
 			bash-language-server
-			onlyoffice-desktopeditors
 			zsh-history-substring-search
 			inputs.pyroclear.packages.${pkgs.stdenv.hostPlatform.system}.default
       		inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default

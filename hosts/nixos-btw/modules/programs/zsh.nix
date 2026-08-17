@@ -7,7 +7,6 @@
       			enable = true;
       			plugins = [
         			"command-not-found"
-        			"fzf"
         			"git"
         			"z"
       			];
