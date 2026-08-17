@@ -16,7 +16,6 @@
 			unzip
 			pipes
 			wtype
-			kitty
 			krita
 			loupe
 			nodejs

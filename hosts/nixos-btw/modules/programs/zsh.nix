@@ -9,6 +9,7 @@
 			shellAliases = {
 				dev = "cd ~/dev";
 				clear = "pyroclear";
+				nixos-status = "cd $HOME/.config/nixos && git status";
 				nixos-dir = "cd $HOME/.config/nixos";
 				matrix = "unimatrix --color blue --speed 96";
 				nixos-add = "cd $HOME/.config/nixos && git add .";
@@ -30,33 +31,7 @@
       				bindkey '^[[1;5C' forward-word
       				bindkey '^[[1;5D' backward-word
       				bindkey '^H' backward-kill-word
-				# Iris Autocomplete Hook (activates only inside an IRIS session)
-				if [ -n "$IRIS_PID" ] && [ -n "$IRIS_FD" ]; then
-					_iris_send_lbuffer() {
-						print -u $IRIS_FD -N -r -- "$LBUFFER" 2>/dev/null
-					}
-					_iris_sync_cwd() {
-						print -u $IRIS_FD -N -r -- "IRIS_CWD:$PWD" 2>/dev/null
-					}
-					_iris_precmd() {
-						local iris_exit_code=$?
-						_iris_sync_cwd
-						print -u $IRIS_FD -N -r -- "IRIS_CMD_STOP:$iris_exit_code" 2>/dev/null
-					}
-					_iris_preexec() {
-						print -u $IRIS_FD -N -r -- "IRIS_CMD_START" 2>/dev/null
-					}
-					autoload -Uz add-zle-hook-widget
-					autoload -Uz add-zsh-hook
-					add-zle-hook-widget line-pre-redraw _iris_send_lbuffer
-					add-zsh-hook precmd _iris_precmd
-					add-zsh-hook preexec _iris_preexec
-					add-zsh-hook chpwd _iris_sync_cwd
-				# Auto-launch iris so autocomplete is always available
-				elif command -v iris >/dev/null 2>&1; then
-					exec iris
-				fi
-    			'';
+			'';
 		};
 	};
 }
