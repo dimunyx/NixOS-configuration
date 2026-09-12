@@ -40,6 +40,7 @@
 			cliphist
 			adw-gtk3
 			obsidian
+			opencode
 			unimatrix
 			localsend
 			fastfetch
