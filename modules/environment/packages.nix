@@ -1,0 +1,69 @@
+{
+	inputs,
+	config,
+	pkgs,
+	lib,
+	...
+}:
+{
+	environment = {
+		systemPackages = with pkgs; [
+			jq
+			mpv
+			nil
+			zip
+			gimp
+			cava
+			btop
+			wget
+			tree
+			loupe
+			pipes
+			krita
+			unzip
+			kitty
+			viber
+			vscode
+			pyright
+			ddcutil
+			udiskie
+			spotify
+			vesktop
+			blender
+			blueman
+			inkscape
+			cpufetch
+			nwg-look
+			usbutils
+			pciutils
+			nautilus
+			cliphist
+			adw-gtk3
+			obsidian
+			unimatrix
+			localsend
+			fastfetch
+			hyprpicker
+			pixelorama
+			libreoffice
+			gnome-boxes
+			clang-tools
+			gnome-clocks
+			wl-clipboard
+			xdg-user-dirs
+			gnome-calculator
+			libsForQt5.qt5ct
+			telegram-desktop
+			kdePackages.qt6ct
+			xwayland-satellite
+			papirus-icon-theme
+			gnome-disk-utility
+			bash-language-server
+			kdePackages.kdenlive
+			kdePackages.kamoso
+			inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+			inputs.ely-launcher.packages.${pkgs.stdenv.hostPlatform.system}.default
+			inputs.Bibata-Modern-Catppuccin-Mocha-Blue.packages.${pkgs.stdenv.hostPlatform.system}.default
+		];
+	};
+}

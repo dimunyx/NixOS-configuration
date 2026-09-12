@@ -1,0 +1,5 @@
+{
+	imports = [
+		./console-config.nix
+	];
+}
