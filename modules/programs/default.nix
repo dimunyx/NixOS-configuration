@@ -3,8 +3,8 @@
 		./nh.nix
 		./git.nix
 		./nano.nix
-		./fish.nix
 		./neovim.nix
+		./nushell.nix
 		./umbriel.nix
 		./starship.nix
 		./noctalia.nix

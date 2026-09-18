@@ -8,14 +8,13 @@
 	users = {
 		users = {
 			dimunyx = {
-				shell = pkgs.fish;
+				shell = pkgs.nushell;
 				isNormalUser = true;
 				extraGroups = [
 					"wheel"
 					"networkmanager"
 				];
 				hashedPasswordFile = toString ./password;
-
 			};
 		};
 	};

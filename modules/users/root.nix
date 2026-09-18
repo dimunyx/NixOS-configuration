@@ -8,7 +8,7 @@
 	users = {
 		users = {
 			root = {
-				shell = pkgs.fish;
+				shell = pkgs.nushell;
 				hashedPasswordFile = toString ./password;
 			};
 		};

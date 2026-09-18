@@ -23,6 +23,7 @@
 			unzip
 			kitty
 			viber
+			codex
 			vscode
 			pyright
 			ddcutil
@@ -40,7 +41,7 @@
 			cliphist
 			adw-gtk3
 			obsidian
-			opencode
+			python314
 			unimatrix
 			localsend
 			fastfetch

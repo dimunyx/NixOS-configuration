@@ -10,6 +10,7 @@
 		displayManager = {
 			noctalia-greeter = {
 				enable = true;
+				package = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
 				settings = {
 					keyboard = {
 						layout = "us";

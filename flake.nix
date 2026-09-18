@@ -67,6 +67,14 @@
 		nixpkgs = {
 			url = "github:NixOS/nixpkgs/nixos-unstable";
 		};
+		noctalia-greeter = {
+			url = "github:noctalia-dev/noctalia-greeter";
+			inputs = {
+				nixpkgs = {
+					follows = "nixpkgs";
+				};
+			};
+		};
 		xdg-desktop-portal-umbriel = {
 			url = "github:noctalia-dev/xdg-desktop-portal-umbriel";
 			inputs = {
