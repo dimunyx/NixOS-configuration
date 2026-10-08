@@ -10,6 +10,7 @@
       mpv
       nil
       zip
+      file
       gimp
       cava
       btop
