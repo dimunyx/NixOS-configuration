@@ -1,0 +1,10 @@
+{
+  ...
+}:
+{
+  security = {
+    sudo = {
+      enable = false;
+    };
+  };
+}

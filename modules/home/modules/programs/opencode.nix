@@ -1,0 +1,10 @@
+{
+  ...
+}:
+{
+  programs = {
+    opencode = {
+      enable = true;
+    };
+  };
+}

@@ -1,0 +1,10 @@
+{
+  ...
+}:
+{
+  services = {
+    libinput = {
+      enable = true;
+    };
+  };
+}

@@ -1,0 +1,21 @@
+{
+  imports = [
+    ./nix
+    ./xdg
+    ./boot
+    ./time
+    ./i18n
+    ./users
+    ./fonts
+    ./system
+    ./console
+    ./nixpkgs
+    ./services
+    ./programs
+    ./hardware
+    ./security
+    ./networking
+    ./environment
+    ./virtualisation
+  ];
+}

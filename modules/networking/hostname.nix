@@ -1,0 +1,8 @@
+{
+	...
+}:
+{
+	networking = {
+		hostName = "nixosik";
+	};
+}

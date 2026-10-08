@@ -1,0 +1,10 @@
+{
+  ...
+}:
+{
+  services = {
+    upower = {
+      enable = true;
+    };
+  };
+}
